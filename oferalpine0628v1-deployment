@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: oferalpine0628v1-deployment
+  labels:
+    app: oferalpine0628v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: oferalpine0628v1
+  template:
+    metadata:
+      labels:
+        app: oferalpine0628v1
+    spec:
+      containers:
+      - name: oferalpine0628v1
+        image: ofer320/alpine0628v1

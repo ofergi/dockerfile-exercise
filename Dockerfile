@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM ofer320/nginx-alpinev1
 WORKDIR /ofer-website
 COPY ./ ./
 #COPY ./ /ofer-app

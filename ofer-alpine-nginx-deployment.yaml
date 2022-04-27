@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ofer-alpinev1-nginx-deployment
+  name: ofer_alpinev1_nginx_deployment
   labels:
     app: ofer320/nginx-alpinev1
 spec:

@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ofer_alpinev1_nginx_deployment
+  name: ofer_alpinev1_nginx
   labels:
-    app: ofer320/nginx-alpinev1
+    app: ofer_alpinev1_nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ofer320/nginx-alpinev1
+      app: ofer_alpinev1_nginx
   template:
     metadata:
       labels:
-        app: ofer320/nginx-alpinev1
+        app: ofer_alpinev1_nginx
     spec:
       containers:
-      - name: ofer320/nginx-alpinev1
+      - name: ofer_alpinev1_nginx
         image: ofer320/nginx-alpinev1
+        ports:
+        - containerPort: 80

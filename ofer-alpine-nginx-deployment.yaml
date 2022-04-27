@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ofer-alpinev1-nginx-deployment
+  labels:
+    app: ofer320/nginx-alpinev1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ofer320/nginx-alpinev1
+  template:
+    metadata:
+      labels:
+        app: ofer320/nginx-alpinev1
+    spec:
+      containers:
+      - name: ofer320/nginx-alpinev1
+        image: ofer320/nginx-alpinev1

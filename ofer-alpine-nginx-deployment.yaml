@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: ofer-alpine-nginx
-        image: ofer320/nginx-alpinev2
+        image: ofer320/nginx-alpinev3
         ports:
         - containerPort: 80
